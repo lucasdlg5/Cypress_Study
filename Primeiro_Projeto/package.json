@@ -1,0 +1,14 @@
+{
+  "name": "primeiro_projeto",
+  "version": "1.0.0",
+  "description": "Capivara",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open"
+  },
+  "author": "Lusga",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.15.0"
+  }
+}
