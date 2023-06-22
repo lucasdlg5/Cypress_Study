@@ -141,4 +141,8 @@ dist
 # SvelteKit build / generate output
 .svelte-kit
 
+# Ignorar pasta de resultado de videos e screenshots do Cyprees npx cypress run
+videos/
+screenshots/
+
 # End of https://www.toptal.com/developers/gitignore/api/node
