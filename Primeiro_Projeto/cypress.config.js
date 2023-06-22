@@ -9,7 +9,7 @@ module.exports = defineConfig({
     "json": false,
     "timestamp": "mmddyyyy_HHMMss"
     },
-    projectId: "jvk4n6",
+    projectId: "o2s4x8",
 
   e2e: {
     setupNodeEvents(on, config) {
