@@ -62,17 +62,13 @@ describe('Login e registro Alurapic', () => {
     })
 
 
-        it ('Fazer login de usuário VÁLIDO', () => {
-        cy.get('input[formcontrolname="userName"]').type('flavio'); //Type é para escrita, não tipo!!!
-        cy.get('input[formcontrolname="password"]').type('123'); //Type é para escrita, não tipo!!!
-        cy.get('button[type="submit"]').click();
+        it.only ('Fazer login de usuário VÁLIDO', () => {
+        cy.login('flavio','123') // Biblioteca criada em Support/gui_commands.js
         cy.contains('a','(Logout)').should('be.visible');
         })
 
-        it ('Fazer login de usuário INVÁLIDO', () => {
-            cy.get('input[formcontrolname="userName"]').type('lusca'); //Type é para escrita, não tipo!!!
-            cy.get('input[formcontrolname="password"]').type('123'); //Type é para escrita, não tipo!!!
-            cy.get('button[type="submit"]').click();
+        it.only ('Fazer login de usuário INVÁLIDO', () => {
+            cy.login('Lusga','1234') // Biblioteca criada em Support/gui_commands.js
             cy.on('window.alert', (str) => {
                 expect(str).to.equal('Invalid user name or password')
             })
