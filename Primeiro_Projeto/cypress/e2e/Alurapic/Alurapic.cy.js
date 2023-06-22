@@ -60,4 +60,23 @@ describe('Login e registro Alurapic', () => {
         cy.contains('ap-vmessage', 'Maximun length is 18').should('be.visible');
         
     })
+
+
+        it ('Fazer login de usuário VÁLIDO', () => {
+        cy.contains('a', 'Register now').click();
+        cy.get('input[formcontrolname="userName"]').type('flavio'); //Type é para escrita, não tipo!!!
+        cy.get('input[formcontrolname="password"]').type('123'); //Type é para escrita, não tipo!!!
+        cy.get('button[type="submit"]').click();
+        cy.contains('a','(Logout)').should('be.visible');
+        })
+    }) 
+    it ('Fazer login de usuário INVÁLIDO', () => {
+        cy.contains('a', 'Register now').click();
+        cy.get('input[formcontrolname="userName"]').type('lusca'); //Type é para escrita, não tipo!!!
+        cy.get('input[formcontrolname="password"]').type('123'); //Type é para escrita, não tipo!!!
+        cy.get('button[type="submit"]').click();
+        cy.on('window.alert', (str) => {
+            expect(str).to.equal('Invalid user name or password')
+        })
+    })
 })
