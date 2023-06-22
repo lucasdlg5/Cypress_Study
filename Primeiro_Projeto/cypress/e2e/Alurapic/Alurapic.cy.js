@@ -62,12 +62,12 @@ describe('Login e registro Alurapic', () => {
     })
 
 
-        it.only ('Fazer login de usuário VÁLIDO', () => {
+        it('Fazer login de usuário VÁLIDO', () => {
         cy.login('flavio','123') // Biblioteca criada em Support/gui_commands.js
         cy.contains('a','(Logout)').should('be.visible');
         })
 
-        it.only ('Fazer login de usuário INVÁLIDO', () => {
+        it('Fazer login de usuário INVÁLIDO', () => {
             cy.login('Lusga','1234') // Biblioteca criada em Support/gui_commands.js
             cy.on('window.alert', (str) => {
                 expect(str).to.equal('Invalid user name or password')
