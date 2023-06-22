@@ -4,7 +4,8 @@
   "description": "Capivara",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress open"
+    "test": "npx cypress open",
+    "mocha": "npx cypress run --reporter mochawesome --record --key aee5df3d-e58c-40b7-9c4f-82b907149a96"
   },
   "author": "Lusga",
   "license": "ISC",
