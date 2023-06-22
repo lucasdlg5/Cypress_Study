@@ -7,7 +7,10 @@ module.exports = defineConfig({
     "overwrite": true,
     "html": true,
     "json": false,
-    "timestamp": "mmddyyyy_HHMMss"
+    "timestamp": "mmddyyyy_HHMMss",
+    "charts": true,
+    "reportTitle": "Alura: Automatização E2E com Cypress",
+    "code": true
     },
     projectId: "jvk4n6",
 
