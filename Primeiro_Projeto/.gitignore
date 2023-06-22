@@ -144,5 +144,6 @@ dist
 # Ignorar pasta de resultado de videos e screenshots do Cyprees npx cypress run
 videos/
 screenshots/
+report/
 
 # End of https://www.toptal.com/developers/gitignore/api/node
