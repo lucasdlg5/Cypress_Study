@@ -1,0 +1,21 @@
+[
+    {
+      "email": "user1@example.com",
+      "fullName": "Usuário Um",
+      "userName": "usuario1",
+      "password": "u8r47hf"
+    },
+    {
+      "email": "user2@example.com",
+      "fullName": "Usuário Dois",
+      "userName": "usuario2",
+      "password": "9fh7e5gk"
+    },
+    {
+      "email": "user3@example.com",
+      "fullName": "Usuário Três",
+      "userName": "usuario3",
+      "password": "65fd3ytb"
+    }
+  ]
+  
